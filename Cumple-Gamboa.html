@@ -74,27 +74,8 @@
     @keyframes dibujar {
       to { stroke-dashoffset: 0; }
     }
-    /* ------------------------------ */
-    .firma {
-      margin-top: 50px;
-      text-align: right;
-      font-size: 16px;
-    }
-    .firma span {
-      font-weight: bold;
-      color: #2c3e50;
-    }
-    .nota {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      font-size: 14px;
-      color: #7f8c8d;
-      font-style: italic;
-      text-align: center;
-    }
-    /* --- PEGA ESTO DENTRO DE <STYLE> --- */
     
+    /* --- ❤️ ESTILOS DE LA FIRMA TIERNA --- */
     .firma-tierna {
       margin-top: 50px;
       text-align: center;
@@ -105,10 +86,11 @@
     
     .nombres-complicidad {
       font-weight: bold;
-      font-size: 22px; 
-      color: #e84393;  
+      font-size: 24px; /* Un poco más grande para resaltar */
+      color: #e84393;  /* Color rosa/rojo cálido */
       display: block;
-      margin-top: 8px;
+      margin-top: 10px;
+      font-family: "Helvetica Neue", sans-serif; /* Fuente un poco más moderna para los nombres */
     }
     
     .avatar-footer-container {
@@ -116,13 +98,24 @@
       margin-top: 30px;
       margin-bottom: 20px;
     }
-        .avatar-footer-img {
+    
+    .avatar-footer-img {
       width: 100%;
-      max-width: 380px;
+      max-width: 380px; /* Tamaño grande tipo postal */
       height: auto;
       border-radius: 12px; 
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-      border: 4px solid #ffffff;
+      border: 5px solid #ffffff;
+    }
+
+    .nota {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee; /* Línea separadora sutil */
+      font-size: 14px;
+      color: #7f8c8d;
+      font-style: italic;
+      text-align: center;
     }
   </style>
 </head>
@@ -134,9 +127,10 @@
     <div class="subtitulo">
       Un pequeño informe no paramétrico, pero sincero
     </div>
+    
     <p>
-      Nos alegra saber que es usted, maestro, con quien empezamos nuestros primeros pasos en la carrera, que tuvo la paciencia de guiarnos
-      y quien nos inspiró a seguir adelante desde que llegamos como cachimbitos llenos de dudas.
+      Nos alegra saber que es usted, maestro, con quien empezamos nuestros primeros pasos en la carrera, 
+      que tuvo la paciencia de guiarnos y quien nos inspiró a seguir adelante desde que llegamos como cachimbitos llenos de dudas.
     </p>
 
     <p>
@@ -159,7 +153,9 @@
 
       <div class="grafico-item">
         <svg viewBox="0 0 200 100">
-          <line x1="20" y1="90" x2="190" y2="90" stroke="#ccc" stroke-width="2"/> <line x1="20" y1="90" x2="20" y2="10" stroke="#ccc" stroke-width="2"/> <circle cx="40" cy="80" r="3" fill="#95a5a6"/>
+          <line x1="20" y1="90" x2="190" y2="90" stroke="#ccc" stroke-width="2"/> 
+          <line x1="20" y1="90" x2="20" y2="10" stroke="#ccc" stroke-width="2"/> 
+          <circle cx="40" cy="80" r="3" fill="#95a5a6"/>
           <circle cx="60" cy="70" r="3" fill="#95a5a6"/>
           <circle cx="80" cy="75" r="3" fill="#95a5a6"/>
           <circle cx="100" cy="50" r="3" fill="#95a5a6"/>
@@ -171,10 +167,11 @@
       </div>
 
     </div>
+
     <p>
       En esta ocasión, el evento de interés es su cumpleaños, un punto notable en la
       serie temporal académica que merece ser reconocido.
-      Bajo cualquier criterio de significancia razonable (alpha < 0.01), se trata de un día especial.
+      Bajo cualquier criterio de significancia razonable (&alpha; < 0.01), se trata de un día especial.
     </p>
 
     <p>
@@ -190,10 +187,10 @@
       y resultados estadísticamente significativos.
     </p>
 
-<div class="firma-tierna">
+    <div class="firma-tierna">
       Con un cariño inmenso y gratitud eterna,<br>
-      Sus estudiantes que le quieren mucho:<br>
-      <span class="nombres-complicidad">Bryan y María <3 </span>
+      sus estudiantes que le quieren mucho:<br>
+      <span class="nombres-complicidad">Bryan y María <3</span>
     </div>
     
     <div class="avatar-footer-container">
@@ -201,7 +198,7 @@
     </div>
     
     <div class="nota">
-      *Se rechaza la hipótesis nula (H_0) de que hoy sea un día cualquiera.*
+      *Se rechaza la hipótesis nula (H<sub>0</sub>) de que hoy sea un día cualquiera.*
     </div>
 
   </div>
